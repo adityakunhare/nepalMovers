@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ataariin/public_html/nepalMovers/
+    - /bin/cp -R * $DEPLOYPATH
