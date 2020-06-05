@@ -11,15 +11,8 @@
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^7.0",
-<<<<<<< HEAD
         "laravel/sanctum": "^2.3",
         "laravel/tinker": "^2.0"
-=======
-        "laravel/passport": "^8.3",
-        "laravel/sanctum": "^2.3",
-        "laravel/tinker": "^2.0",
-        "yajra/laravel-datatables-oracle": "^9.8"
->>>>>>> 105331cc5305c0b4b4b0d96e51eb59250e1c6c94
     },
     "require-dev": {
         "facade/ignition": "^2.0",
