@@ -4,10 +4,7 @@ namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
-<<<<<<< HEAD
-=======
 
->>>>>>> 105331cc5305c0b4b4b0d96e51eb59250e1c6c94
 
 class Kernel extends HttpKernel
 {
@@ -41,6 +38,7 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
+
 
         'api' => [
             EnsureFrontendRequestsAreStateful::class,
