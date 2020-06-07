@@ -18,3 +18,5 @@ Route::namespace('Api')->group(function () {
     Route::post('/user','LoginController@getUser')->middleware('auth:sanctum');
     Route::post('/login','LoginController@login');
 });
+
+Route::get('/login','UserController@index');
