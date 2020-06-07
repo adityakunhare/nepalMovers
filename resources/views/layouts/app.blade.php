@@ -25,11 +25,6 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
-    <pre>
-    @php
-        print_r(session()->get('product'))
-    @endphp
-    </pre>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">

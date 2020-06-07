@@ -17,7 +17,6 @@ Route::prefix('/admin')->name('admin.')->namespace('Admin')->group(function () {
 
     Route::get('/dashboard', 'HomeController@index')->name('home')->middleware('auth:admin');
 
-
     Route::namespace('Auth')->group(function () {
 
         //Login Routes
@@ -41,6 +40,6 @@ Route::prefix('/admin')->name('admin.')->namespace('Admin')->group(function () {
 });
 
 //client side routes...
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();

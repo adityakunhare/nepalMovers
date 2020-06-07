@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "MoverBold";
+  src: url("../font/Gilroy-Bold.eot");
+  src: local("Gilroy-Bold"),
+    url("../font/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Gilroy-Bold.woff2") format("woff2"),
+    url("../font/Gilroy-Bold.woff") format("woff"),
+    url("../font/Gilroy-Bold.ttf") format("truetype"),
+    url("../font/Gilroy-Bold#Gilroy-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mover";
+  src: url("../font/Gilroy-Medium.eot");
+  src: local("../font/Gilroy-Medium"),
+    url("../font/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../font/Gilroy-Medium.woff2") format("woff2"),
+    url("../font/Gilroy-Medium.woff") format("woff"),
+    url("../font/Gilroy-Medium.ttf") format("truetype"),
+    url("../font/Gilroy-Medium.svg#Gilroy-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  font-family: "Mover", Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+.btn {
+  font-family: "MoverBold";
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 16px 48px;
+  background: $primary-color;
+  color: $white;
+  border-radius: 5px;
+}
+.btn-light {
+  background: $white;
+  color: $primary-color;
+}
+.btn-outlined-light {
+  background: transparent;
+  border: 1px solid $white;
+  color: $white;
+}
+.btn-outlined-dark {
+  background: transparent;
+  border: 1px solid $primary-text;
+  color: $primary-text;
+}
+.btn-small {
+  padding: 8px 24px;
+  border-radius: 2px;
+}
+.btn-long {
+  padding: 16px 0;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: MoverBold;
+  line-height: 44px;
+  margin: 0 0 16px 0;
+}
+p {
+  font-size: 16px;
+  color: $secondary-text;
+  line-height: 24px;
+}
+p.small {
+  font-size: 14px;
+}
+p.large {
+  font-size: 20px;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.input-group {
+  // height: 70px;
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: $secondary-text;
+}
+input,
+textarea {
+  width: 100%;
+  border: 1px solid $secondary-text;
+  border-radius: 2px;
+  resize: none;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 8px;
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
