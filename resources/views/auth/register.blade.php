@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -87,5 +87,103 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+<div class="login-page">
+      <div class="form-container">
+        <div class="title">
+          Signup
+        </div>
+        <div class="form">
+          <form action="">
+            <div class="input-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="full-name"
+                id="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="name">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@domain.com"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone</label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="9841236783"
+              />
+            </div>
+            <div class="input-group">
+              <label for="phone">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Type you password"
+              />
+            </div>
+            <div class="input-group">
+              <label for="phone">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                placeholder="Re-type you password"
+              />
+            </div>
+            <p class="usertype-label">
+              Signup as:
+            </p>
+            <div class="usertype">
+              <div class="check-group">
+                <input
+                  type="radio"
+                  name="usertype"
+                  id="client"
+                  value="client"
+                />
+                <label for="client" aria-label="Client">
+                  <span></span>
+                  Client
+                </label>
+              </div>
+              <div class="check-group">
+                <input
+                  type="radio"
+                  name="usertype"
+                  id="driver"
+                  value="driver"
+                />
+                <label for="driver" aria-label="Driver">
+                  <span></span>
+                  Mover Driver
+                </label>
+              </div>
+            </div>
+            <div class="form-subtext">
+              By signing up you agree to our
+              <a href="#" class="form-link">Terms and Conditions</a>
+            </div>
+            <div class="input-group">
+              <button class="btn btn-long">Create Account</button>
+            </div>
+          </form>
+        </div>
+        <div class="form-subtext">
+          Already have an account?
+          <a href="#" class="form-link">Login</a>
+        </div>
+      </div>
+    </div>
 @endsection

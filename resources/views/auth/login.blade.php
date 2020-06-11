@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+{{--<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +69,61 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+    <div class="login-page">
+      <div class="form-container">
+        <div class="title">
+          Login
+        </div>
+        <div class="form">
+            <form method="POST" action="{{ route('login') }}">
+            @csrf
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email" value="{{ old('email') }}"
+                autocomplete="email"
+                autofocus
+                id="email"
+                placeholder="example@domain.com"
+                required
+              />
+                @error('email')
+                    <span class="text-red" role="alert" style="color: red">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+
+              <input
+                type="password"
+                name="password"
+                required
+                autocomplete="current-password"
+                id="password"
+                placeholder="Type you password"
+              />
+            </div>
+             @error('password')
+                <span class="invalid-feedback" role="alert" style="color: red">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            <div class="input-group">
+              <button class="btn btn-long">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="form-subtext">
+          <a href="{{ route('password.request') }}"> Forgot password?</a>
+        </div>
+        <div class="form-subtext">
+          Don't have an account?
+          <a href="{{ route('register') }}" class="form-link">Create account</a>
+        </div>
+      </div>
+    </div>
 @endsection

@@ -41,5 +41,6 @@ Route::prefix('/admin')->name('admin.')->namespace('Admin')->group(function () {
 
 //client side routes...
 Route::get('/', 'HomeController@index')->name('home');
+// Route::view('login','welcome')->name('welcome');
 
-Auth::routes();
+// Auth::routes();

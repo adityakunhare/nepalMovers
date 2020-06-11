@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -97,4 +97,49 @@
             </div>
         </div>
     </body>
-</html>
+</html> --}}
+@extends('layouts.app')
+
+@section('content')
+    <div class="login-page">
+      <div class="form-container">
+        <div class="title">
+          Login
+        </div>
+        <div class="form">
+          <form action="">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@domain.com"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Type you password"
+              />
+            </div>
+            <div class="input-group">
+              <button class="btn btn-long">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="form-subtext">
+          <a href="#"> Forgot password?</a>
+        </div>
+        <div class="form-subtext">
+          Don't have an account?
+          <a href="#" class="form-link">Create account</a>
+        </div>
+      </div>
+    </div>
+@endsection
