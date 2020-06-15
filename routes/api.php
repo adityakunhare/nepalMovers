@@ -19,4 +19,4 @@ Route::namespace('Api')->group(function () {
     Route::post('/login','LoginController@login');
 });
 
-Route::get('/login','UserController@index');
+// Route::get('/login','UserController@index');
