@@ -1,0 +1,258 @@
+@media screen and (max-width: 991px) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  .nav-dropdown {
+    width: 100%;
+    box-shadow: none;
+  }
+  nav {
+    width: 100%;
+    padding: 80px 0 15px;
+    ul {
+      width: 100%;
+      display: none;
+      li {
+        width: 100%;
+        float: none;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+    box-shadow: none;
+  }
+  .service-form {
+    justify-content: center;
+
+    flex-wrap: wrap;
+    .service-image {
+      display: none;
+    }
+    .map-container {
+      order: 2;
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+}
+/* Small devices (tablets, 768px and up) */
+
+// small devices phones
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .mobile-app {
+    .download-app {
+      padding: 0 20px 80px;
+      .store-link {
+        a {
+          width: 45%;
+          margin-right: 8px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .mailbox-image {
+    display: none;
+  }
+  .form {
+    width: 100% !important;
+  }
+
+  .our-services {
+    width: 100%;
+  }
+  .login-page {
+    .form-container {
+      margin-top: 0px;
+      width: 80%;
+      padding: 16px;
+      margin-bottom: 80px;
+    }
+    .radio-group {
+      width: auto;
+    }
+  }
+  .form-container {
+    padding: 24px;
+    overflow: hidden;
+  }
+  .not-found {
+    margin: 40px 0;
+    width: 100%;
+    overflow: hidden;
+    img {
+      height: auto;
+      width: 80%;
+    }
+    .content {
+      margin: 24px 0 0;
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .link-group {
+        margin-top: 8px;
+      }
+    }
+  }
+  .support-page {
+    .big {
+      font-size: 36px;
+    }
+    .title {
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+    .category-title {
+      h6 {
+        font-size: 14px;
+      }
+    }
+    .question {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .answer {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .support-landing {
+    p {
+      font-size: 16px;
+    }
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  .support-list {
+    justify-content: flex-start;
+  }
+}
+@media screen and(max-width : 576px) {
+  .radio-group {
+    width: 100%;
+  }
+  .check-group {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .our-services {
+    width: 100%;
+  }
+
+  .mailbox-image {
+    display: none;
+  }
+  .mobile-app {
+    justify-content: center;
+
+    .download-app {
+      text-align: center;
+      padding-top: 0px;
+      p {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+    .store-link {
+      justify-content: center;
+      a {
+        margin-right: 16px;
+        width: 30%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width: 992px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+  .mobile-app {
+    .mobile-image {
+      width: 50%;
+    }
+    .download-app {
+      p {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+      h1 {
+        font-size: 28px;
+      }
+    }
+    .store-link {
+      margin-top: 0;
+      a {
+        margin-right: 16px;
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .contact .contact-us .form {
+    width: 390px;
+  }
+  .contact .contact-us .mailbox-image {
+    margin-left: 70px;
+  }
+  .why-choose-us .features .feature {
+    width: 200px;
+    margin: 8px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .mobile-app {
+    .mobile-image {
+      width: 50%;
+    }
+    .download-app {
+      padding: 80px 0;
+    }
+  }
+}
